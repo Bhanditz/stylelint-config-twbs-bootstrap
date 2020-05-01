@@ -33,7 +33,13 @@
     "stylelint-config-recommended-scss": "^3.2.0",
     "stylelint-config-standard": "^18.2.0",
     "stylelint-order": "^2.0.0",
-    "stylelint-scss": "^3.4.4"
+    "stylelint-scss": "^3.4.4",
+    "snyk": "^1.316.1"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
